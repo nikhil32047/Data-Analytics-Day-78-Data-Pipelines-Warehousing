@@ -1,0 +1,65 @@
+Advanced Data Engineering for Analysts
+
+🔹 Lesson 1: Introduction to Data Pipelines
+===============================================
+Summary:
+A data pipeline automates the flow of data from source → processing → storage → dashboard.
+Components: Extraction, Transformation, Loading (ETL)
+Tools: Airflow, AWS Glue, Azure Data Factory
+Benefits: Scalability, reliability, automation
+
+Example:
+Automating daily data collection from APIs → cleaning in Python → loading into Power BI dashboard.
+
+
+🔹 Lesson 2: ETL vs ELT
+=========================
+Summary:
+Both are data movement strategies, but in different orders:
+ETL → Extract → Transform → Load (used in traditional systems)
+ELT → Extract → Load → Transform (used in cloud systems like BigQuery, Snowflake)
+
+Example:
+ETL: Clean data before sending to SQL Server.
+ELT: Load raw data to BigQuery, then use SQL to clean it.
+
+
+🔹 Lesson 3: Data Warehousing Concepts
+===========================================
+Summary:
+A data warehouse is a central repository for analytics.
+Layers: Staging → Integration → Presentation
+Schema types: Star, Snowflake
+Tools: Snowflake, Redshift, Google BigQuery
+
+Example:
+A retail company stores all sales, customer, and marketing data in Snowflake for unified analysis.
+
+
+🔹 Lesson 4: Data Lake vs Data Warehouse
+==========================================
+Summary:
+-----------
+Feature	Data Lake	Data Warehouse
+Data Type	Raw, unstructured	Processed, structured
+Purpose	Storage & exploration	Analytics & reporting
+Tool Example	AWS S3	Snowflake, Redshift
+
+Example:
+Data Lake: Store all customer click logs.
+Data Warehouse: Use processed purchase data for reports.
+
+
+🔹 Lesson 5: Case Study – End-to-End Retail Data Pipeline
+=========================================================
+Summary:
+Steps:
+--------
+Extract daily sales from SQL database
+Clean data in Python (Pandas)
+Load into Snowflake warehouse
+Build Power BI dashboard to track sales trends
+
+Example:
+The pipeline reduced report generation time from 3 hours → 10 minutes 🚀
+
